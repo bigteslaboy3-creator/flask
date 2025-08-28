@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codbb coffee shop Website.</title>
+    <link rel="stylesheet" href="static/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#home">Coffee<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+    <main>
+    <section class="hero-section" id="home">
+      <div class="content">
+        <h2>Start Your Day With Fresh Coffee</h2>
+        <p>
+          Coffee is a popular and beloved beverage enjoyed by 
+          people around the world.Awaken your senses with a steaming cup of liquid motivation.
+        </p>
+        <button>Order Now</button>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------menu section-------------------------------------- -->
+     <section class="menu-section" id="product">
+        <h2 class="section-title">Our Menu</h2>
+    <div class="section-content">
+        <ul class="menu-list">
+          <ul class="menu-list">
+  <li class="menu-item">
+    <img src="{{ url_for('static', filename='image/hot-beverages.png') }}" alt="hot-beverages.png" class="menu-image">
+    <div class="menu-details">
+      <h3 class="name">Hot Beverages</h3>
+      <p class="text">Wide range of steaming hot coffee to make your fresh and lights.</p>
+      <button type="button" class="add-cart-btn" data-item="Hot Beverages">Add to Cart</button>
+    </div>
+  </li>
+
+  <li class="menu-item">
+    <img src="{{ url_for('static', filename='image/cold-beverages.png') }}" alt="cold-beverages.png" class="menu-image">
+    <div class="menu-details">
+      <h3 class="name">Cold Beverages</h3>
+      <p class="text">Creamy and frothy cold coffee to make you cool.</p>
+      <button type="button" class="add-cart-btn" data-item="Cold Beverages">Add to Cart</button>
+    </div>
+  </li>
+
+  <li class="menu-item">
+    <img src="{{ url_for('static', filename='image/refreshment.png') }}" alt="refreshment.png" class="menu-image">
+    <div class="menu-details">
+      <h3 class="name">Refreshment</h3>
+      <p class="text">Fruits and icy refreshing drink to make you feel refresh.</p>
+      <button type="button" class="add-cart-btn" data-item="Refreshment">Add to Cart</button>
+    </div>
+  </li>
+
+  <li class="menu-item">
+    <img src="{{ url_for('static', filename='image/special-combo.png') }}" alt="special-combo.png" class="menu-image">
+    <div class="menu-details">
+      <h3 class="name">Special Combos</h3>
+      <p class="text">Your favorite eating and drinking combinations.</p>
+      <button type="button" class="add-cart-btn" data-item="Special Combos">Add to Cart</button>
+    </div>
+  </li>
+
+  <li class="menu-item">
+    <img src="{{ url_for('static', filename='image/desserts.png') }}" alt="desserts.png" class="menu-image">
+    <div class="menu-details">
+      <h3 class="name">Dessert</h3>
+      <p class="text">Satiate your palate and take you on a culinary treat.</p>
+      <button type="button" class="add-cart-btn" data-item="Dessert">Add to Cart</button>
+    </div>
+  </li>
+
+  <li class="menu-item">
+    <img src="{{ url_for('static', filename='image/burger-frenchfries.png') }}" alt="burger-frenchfries.png" class="menu-image">
+    <div class="menu-details">
+      <h3 class="name">Burger & French Fries</h3>
+      <p class="text">Quick bites to satisfy your small size hunger.</p>
+      <button type="button" class="add-cart-btn" data-item="Burger & French Fries">Add to Cart</button>
+    </div>
+  </li>
+
+    <li class="menu-item">
+    <img src="{{ url_for('static', filename='image/fries-1.png') }}" alt="fries-1.png" class="menu-image">
+    <div class="menu-details">
+      <h3 class="name">French Fries</h3>
+      <p class="text">Crispy and golden fries to complement your meal.</p>
+      <button type="button" class="add-cart-btn" data-item="French Fries">Add to Cart</button>
+    </div>
+  </li>
+
+  <li class="menu-item">
+    <img src="{{ url_for('static', filename='image/spageti-and-chicken-leg.png') }}" alt="spageti-and-chicken-leg.png" class="menu-image">
+    <div class="menu-details">
+      <h3 class="name">Spaghetti & Chicken Leg</h3>
+      <p class="text">Delicious spaghetti paired with a juicy chicken leg.</p>
+      <button type="button" class="add-cart-btn" data-item="Spaghetti & Chicken Leg">Add to Cart</button>
+    </div>
+  </li>
+</ul>
+
+        </ul>
+    </div>
+</section>
+    <!-- ----------------------------------------testimonial section-------------------------------------- -->
+    <section class="testimonial-section" id="Testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="section-content">
+            <div class="testimonial-card">
+                <img src="{{ url_for('static', filename='image/user-1.jpg') }}" alt="user1.jpg" class="user-image">
+                <p class="user-feedback">"The coffee here is amazing! I can't get enough of it."</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="{{ url_for('static', filename='image/user-2.jpg') }}" alt="user2.jpg" class="user-image">
+                <p class="user-feedback">"A cozy place with great ambiance. Perfect for working or relaxing."</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="{{ url_for('static', filename='image/user-3.jpg') }}" alt="user3.jpg" class="user-image">
+                <p class="user-feedback">"I love their pastries! Always fresh and delicious."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Toggle Button -->
+<button id="cart-toggle">Cart</button>
+
+<!-- Sidebar Cart -->
+<div class="sidebar" id="cart-sidebar">
+  <h2>Your Cart</h2>
+  {% if cart and cart|length > 0 %}
+    {% for item in cart %}
+      <div class="cart-item">
+        <img src="{{ url_for('static', filename='image/' ~ item.image) }}" alt="{{ item.name }}" class="cart-item-image" style="width:50px;height:50px;border-radius:50%;">
+        <div class="cart-item-info">
+          <span class="cart-item-name">{{ item.name }}</span>
+          <p class="cart-item-desc">{{ item.desc }}</p>
+        </div>
+        <div class="cart-item-controls">
+          <form action="{{ url_for('update_cart', item=item.name, action='decrease') }}" method="post" style="display:inline;">
+            <button type="submit" class="cart-qty-btn">-</button>
+          </form>
+          <span class="cart-item-qty">{{ item.qty }}</span>
+          <form action="{{ url_for('update_cart', item=item.name, action='increase') }}" method="post" style="display:inline;">
+            <button type="submit" class="cart-qty-btn">+</button>
+          </form>
+          <form action="{{ url_for('remove_from_cart', item=item.name) }}" method="post" style="display:inline;">
+            <button type="submit" class="cart-remove-btn">Remove</button>
+          </form>
+        </div>
+      </div>
+    {% endfor %}
+    <form action="{{ url_for('clear_cart') }}" method="post">
+      <button type="submit" class="cart-clear-btn">Clear Cart</button>
+    </form>
+  {% else %}
+    <p>Your cart is empty.</p>
+  {% endif %}
+</div>
+
+<div class="cart-popup" id="cart-popup">Item added to cart!</div>
+
+<script>
+  // Sidebar toggle logic
+  const cartToggle = document.getElementById('cart-toggle');
+  const cartSidebar = document.getElementById('cart-sidebar');
+  cartToggle.addEventListener('click', () => {
+    cartSidebar.classList.toggle('show');
+  });
+
+  // Add to Cart popup and AJAX logic
+  document.querySelectorAll('.add-cart-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const item = btn.getAttribute('data-item');
+      fetch(`/add_to_cart/${encodeURIComponent(item)}`, {
+        method: 'POST'
+      }).then(response => {
+        if (response.ok) {
+          // Show popup
+          const popup = document.getElementById('cart-popup');
+          popup.classList.add('show');
+          setTimeout(() => {
+            popup.classList.remove('show');
+          }, 1500);
+          // Optionally, update cart sidebar here via AJAX
+        }
+      });
+    });
+  });
+</script>
+    </main>
+    <footer>
+      <p>© 2025 bigteslaboy. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
